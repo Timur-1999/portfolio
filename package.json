@@ -1,13 +1,21 @@
 {
-  "name": "runsmart",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timur-1999/portfolio.git"
+  },
+  "author": "Timur Asanov",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timur-1999/portfolio/issues"
+  },
+  "homepage": "https://github.com/Timur-1999/portfolio#readme",
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
