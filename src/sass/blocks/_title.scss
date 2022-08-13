@@ -1,0 +1,35 @@
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    position: relative;
+    &_white{
+        color: #fff;
+    }
+    &_fz14{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_fz16{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_fz48{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    &__subtext{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        &_mt6{
+            margin-top: 6px;
+        }
+    }
+    &_line{
+        @include line;
+    }
+    &_line-left{
+        @include line-left;
+    }
+}

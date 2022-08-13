@@ -1,0 +1,53 @@
+.about-me{
+    margin: 120px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__photo{
+        width: 400px;
+        height: 600px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__block{
+        width: 670px;
+    }
+    &__subtitle{
+        position: relative;
+        @include before_circle;
+        padding-left: 10px;
+    }
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(2, 260px);
+        column-gap: 50px;
+        row-gap: 20px;
+        margin-top: 40px;
+    }
+    &__desc{
+        margin-top: 20px;
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+    }
+    &__round{
+        align-self: flex-start;
+        position: relative;
+        img{
+            position: relative;
+            top: 10px;
+            left: 8px;
+        }
+    }
+    &__box-photo{
+        width: 40px;
+    }
+    &__box-txt{
+        margin-left: 20px;
+        width: 200px;
+    }
+}
