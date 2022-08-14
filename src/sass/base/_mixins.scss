@@ -3,34 +3,11 @@
         content: '';
         position: absolute;
         left: 0;
-        bottom: -25%;
+        top: -25%;
         width: 36px;
         height: 36px;
         background: $main-color;
         border-radius: 100%;
         z-index: -1;
-    }
-}
-@mixin line{
-    &::before{
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60px;
-        height: 3px;
-        background: $main-color;
-    }
-}
-@mixin line-left{
-    &::before{
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 30px;
-        width: 60px;
-        height: 3px;
-        background: $main-color;
     }
 }
