@@ -1,0 +1,93 @@
+.resume{
+    padding-top: 120px;
+    &__title{
+        position: relative;
+        @include before_circle;
+        &::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        text-align: center;
+    }
+    &__subtitle{
+        text-align: center;
+    }
+    &__wrapper{
+        margin: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column{
+        &-title{
+            position: relative;
+            padding-left: 50px;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: $main-color;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+        }
+        ul{
+            list-style-type: none;
+            li{
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 8px);
+                    background: #000;
+                    top: -8px;
+                    left: 0;
+                }
+            }
+        }
+    }
+    &__item{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 45px;
+            background: #000;
+            top: 68px;
+        }
+        &-head{
+            position: relative;
+            padding: 45px 0 0 100px;
+        }
+        &-body{
+            padding-left: 43px;
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-icon{
+            position: absolute;
+            top: 50px;
+            left: 45px;
+            @include before_circle;
+            img{
+                position: absolute;
+                top: 14px;
+                left: 17px;
+            }
+        }
+        &-location{
+            margin-top: 5px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
