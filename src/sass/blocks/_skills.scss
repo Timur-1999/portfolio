@@ -1,0 +1,42 @@
+.skills{
+    padding-top: 120px;
+    &__title{
+        position: relative;
+        @include before_circle;
+        &::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        text-align: center;
+    }
+    &__subtitle{
+        text-align: center;
+    }
+    
+    &__wrapper{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+    }
+    &__item{
+        border: 1px solid #000000;
+        padding: 30px;
+        &-img{
+            height: 65px;
+            display: flex;
+            align-items: center;
+        }
+        &-title{
+            margin-top: 20px;
+        }
+        &-desc{
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

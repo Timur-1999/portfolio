@@ -1,0 +1,43 @@
+.development{
+    padding-top: 120px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, minmax(70px, auto));
+        grid-auto-rows: minmax(70px, auto);
+        column-gap: 45px;
+        row-gap: 30px;
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-title{
+            position: relative;
+            @include before_circle;
+            padding-left: 14px;
+            padding-top: 2px;
+        }
+        &-percent{
+            padding-top: 2px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+    &__progressbar{
+        display: flex;
+        align-self: flex-end;
+        height: 14px;
+        background-color: #E8E4DE;
+        .progress{
+            width: 100%;
+            background-color: $main-color;
+        }
+    }
+}
