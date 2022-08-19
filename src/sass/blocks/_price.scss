@@ -11,10 +11,8 @@
     &-list{
         padding-left: 25px;
         display: grid;
-        grid-template-rows: minmax(21px, auto) minmax(18px, auto);
-        grid-template-columns: minmax(57px, auto) minmax(90px, auto);
+        grid-template: repeat(2, minmax(21, auto)) / repeat(2, auto);
         row-gap: 5px;
-        grid-auto-rows: 44px;
         justify-content: space-between;
         .service{
             position: relative;
