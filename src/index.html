@@ -490,19 +490,23 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input type="text" name="userName" id="userName">
+                            <input required type="text" name="userName" id="userName">
                             <label for="userName">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input type="email" name="userEmail" id="userEmail">
+                            <input required type="email" name="userEmail" id="userEmail">
                             <label for="userEmail">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="message" id="message"></textarea>
                             <label for="message">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox" name="" id="">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
