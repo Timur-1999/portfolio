@@ -1,0 +1,62 @@
+@media (max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (max-width:992px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (max-width:768px){
+    .container{
+        max-width: 540px;
+    }
+    .title{
+        &_fz48{
+            font-size: 38px;
+        }
+    }
+    .promo{
+        &__title{
+            line-height: 49px;
+            width: 380px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width:576px){
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .sidepanel{
+        display: none;
+    }
+    .title{
+        &_fz48{
+            font-size: 26px;
+        }
+    }
+    .hamburger{
+        right: 20px;
+    }
+    .menu{
+        &__block{
+            width: 250px;
+            padding-left: 55px;
+        }
+    }
+    .promo{
+        &__title{
+            line-height: 39px;
+            width: 300px;
+        }
+        &__btns{
+            margin-top: 30px;
+        }
+    }
+}
