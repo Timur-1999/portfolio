@@ -2,17 +2,62 @@
     .container{
         max-width: 960px;
     }
+    .about-me{
+        &__wrapper{
+            grid-template-columns: 400px 480px;
+            column-gap: 40px;
+        }
+        &__skills{
+            column-gap: 20px;
+            grid-template: repeat(2,minmax(115px,auto)) / repeat(2, 220px);  
+            &-item{
+                grid-template-columns: 35px 170px;
+                column-gap: 15px; 
+            }
+        }
+    }
 }
 
 @media (max-width:992px){
     .container{
         max-width: 720px;
     }
+    .sidepanel {
+        right: 10px;
+    }
+    .title{
+        &_fz36{
+            font-size: 30px;
+        }
+    }
+    .about-me{
+        padding-top: 80px;
+        &__wrapper{
+            grid-template-columns: 300px 370px;
+            gap: 30px;
+        }
+        &__skills{
+            grid-template: minmax(80px, auto)/auto;
+            grid-auto-rows: minmax(80px, auto);
+            &-item{
+                grid-template-columns: 40px auto;
+            }
+        }
+        &__subtitle{
+            line-height: 55px;
+        }
+        &__text{
+            margin-top: 15px;
+        }
+    }
 }
 
 @media (max-width:768px){
     .container{
         max-width: 540px;
+    }
+    .sidepanel{
+        display: none;
     }
     .title{
         &_fz48{
@@ -26,19 +71,39 @@
             margin-top: 20px;
         }
     }
+    .about-me{
+        padding-top: 40px;
+        &__wrapper{
+            grid-template:  540px auto auto/1fr;
+        }
+        &__photo{
+            grid-row: unset;
+            height: 100%;
+        }
+        &__skills{
+            grid-template-columns: repeat(2, 260px);
+            &-item{
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width:576px){
     .container{
         width: 100%;
         padding: 0 10px;
-    }
-    .sidepanel{
-        display: none;
+        display: grid;
+        justify-content: center;
     }
     .title{
         &_fz48{
             font-size: 26px;
+            line-height: 38px;
+        }
+        &_fz36{
+            font-size: 24px;
         }
     }
     .hamburger{
@@ -52,11 +117,19 @@
     }
     .promo{
         &__title{
-            line-height: 39px;
             width: 300px;
         }
         &__btns{
             margin-top: 30px;
+        }
+    }
+    .about-me{
+        &__wrapper{
+            grid-template:  340px auto auto/300px;
+            justify-content: center;
+        }
+        &__skills{
+            grid-template-columns: 1fr;
         }
     }
 }
