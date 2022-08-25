@@ -16,6 +16,26 @@
             }
         }
     }
+    .resume{
+        &__wrapper{
+            margin: 60px 60px 0 60px;
+            grid-template-columns: repeat(2,380px);
+            column-gap: 80px;
+        }
+    }
+    .skills{
+        &__wrapper{
+            grid-template-columns: repeat(3, 270px);
+            justify-content: center;
+        }
+    }
+    .development{
+        padding-top: 80px;
+        &__wrapper{
+            grid-template-columns: repeat(2, 350px);
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width:992px){
@@ -50,6 +70,30 @@
             margin-top: 15px;
         }
     }
+    .resume{
+        padding-top: 80px;
+        &__wrapper{
+            margin: 40px auto 0 auto;
+            grid-template-columns: repeat(2,340px);
+            column-gap: 40px;
+        }
+        &__item-body{
+            padding-left: 43px;
+        }
+    }
+    .skills{
+        padding-top: 80px;
+        &__wrapper{
+            grid-template-columns: repeat(2, 270px);
+            gap: 30px;
+        }
+    }
+    .development{
+        &__wrapper{
+            grid-template-columns: repeat(2,300px);
+            column-gap: 25px;
+        }
+    }
 }
 
 @media (max-width:768px){
@@ -63,6 +107,9 @@
         &_fz48{
             font-size: 38px;
         }
+    }
+    .divider{
+        margin: 15px auto 0 auto;
     }
     .promo{
         &__title{
@@ -88,6 +135,26 @@
             }
         }
     }
+    .resume{
+        padding-top: 40px;
+        &__wrapper{
+            grid-template-columns: 460px;
+            row-gap: 40px;
+        }
+    }
+    .skills{
+        padding-top: 40px;
+        &__wrapper{
+            margin-top: 40px;
+            gap: 13px;
+        }
+    }
+    .development{
+        padding-top: 40px;
+        &__wrapper{
+            grid-template-columns: repeat(2, 257px);
+        }
+    }
 }
 
 @media (max-width:576px){
@@ -104,6 +171,9 @@
         }
         &_fz36{
             font-size: 24px;
+        }
+        &__section-subtitle{
+            line-height: 36px;
         }
     }
     .hamburger{
@@ -130,6 +200,24 @@
         }
         &__skills{
             grid-template-columns: 1fr;
+        }
+    }
+    .resume{
+        padding-top: 40px;
+        &__wrapper{
+            grid-template: repeat(2, minmax(428px, auto))/300px;
+        }
+    }
+    .skills{
+        padding-top: 40px;
+        &__wrapper{
+            margin-top: 40px;
+            grid-template-columns: repeat(1, 270px);
+        }
+    }
+    .development{
+        &__wrapper{
+            grid-template-columns: 300px;
         }
     }
 }

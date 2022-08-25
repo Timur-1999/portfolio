@@ -35,9 +35,11 @@
         align-self: flex-end;
         height: 14px;
         background-color: #E8E4DE;
+        border-radius: 4px;
         .progress{
             width: 100%;
             background-color: $main-color;
+            border-radius: 4px;
         }
     }
 }

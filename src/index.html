@@ -127,7 +127,11 @@
         <div class="container">
             <div class="about-me__wrapper">
                 <div class="about-me__photo">
-                    <img src="img/my_photo.jpg" alt="my_photo">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/my_photo-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/my_photo.jpg">
+                        <img src="img/my_photo.jpg" alt="my_photo">
+                    </picture>
                 </div>
                 <div class="about-me__descr">
                     <h2 class="title title_fz16 about-me__title">Про меня</h2>
@@ -180,10 +184,10 @@
         </div>
     </section>
 
-    <!-- <section class="resume">
+    <section class="resume">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Опыт</h2>
-            <div class="title title_fz36 title__section-subtitle">Чем я буду полезна</div>
+            <div class="title title_fz36 title__section-subtitle">Чем я буду полезен</div>
             <div class="divider"></div>
 
             <div class="resume__wrapper">
@@ -255,9 +259,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="skills">
+    <section class="skills">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Навыки</h2>
             <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
@@ -348,9 +352,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="development">
+    <section class="development">
         <div class="container">
             <div class="development__wrapper">
                 <div class="development__item">
@@ -409,7 +413,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- <section class="portfolio">
         <div class="container">
