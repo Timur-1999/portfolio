@@ -2,18 +2,17 @@
     padding-top: 60px;
     &__wrapper{
         margin-top: 60px;
-        padding: 0 51px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 306px;
+        grid-template-columns: repeat(2, 366px);
+        grid-auto-rows: minmax(45px, auto);
+        justify-content: space-around;
         row-gap: 15px;
     }
     &-list{
         padding-left: 25px;
         display: grid;
-        grid-template: repeat(2, minmax(21, auto)) / repeat(2, auto);
-        row-gap: 5px;
         justify-content: space-between;
+        row-gap: 5px;
         .service{
             position: relative;
             &::before{

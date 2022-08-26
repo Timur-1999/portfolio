@@ -30,8 +30,12 @@
     &__text, &__social{
         margin-top: 20px;
     }
+    &__social{
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+    }
     &__link{
-        margin-right: 20px;
         img{
             max-width: 30px;
             max-height: 30px;
@@ -78,6 +82,9 @@
             padding: 0 20px;
             font-size: 12px;
             font-weight: 500;
+            &:focus{
+                outline-color: $main-color;
+            }
         }
     }
     &__textarea{
@@ -90,6 +97,9 @@
             padding: 20px;
             font-size: 14px;
             font-weight: 500;
+            &:focus{
+                outline-color: $main-color;
+            }
         }
     }
     &__btn{

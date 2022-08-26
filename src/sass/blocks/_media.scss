@@ -36,6 +36,28 @@
             justify-content: center;
         }
     }
+    .portfolio{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: center;
+            .vertical, .horizontal{
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts{
+        &__wrapper{
+            grid-template-columns: 400px 450px;
+        }
+        &__form{
+            grid-template-columns: repeat(2, 220px);
+        }
+        &__policy{
+            text-align: center;
+        }
+    }
 }
 
 @media (max-width:992px){
@@ -89,9 +111,57 @@
         }
     }
     .development{
+        padding-top: 80px;
         &__wrapper{
             grid-template-columns: repeat(2,300px);
             column-gap: 25px;
+        }
+    }
+    .portfolio{
+        padding-top: 80px;
+    }
+    .price{
+        &__wrapper{
+            margin-left: 10px;
+            margin-right: 10px;
+            grid-template-columns: repeat(auto-fit, 330px);
+        }
+    }
+    .contacts{
+        padding-top: 80px;
+        &__wrapper{
+            padding: 0 50px 0 50px;
+            grid-template-columns: 540px;
+            justify-content: center;
+        }
+        &__title{
+            text-align: center;
+            &::before{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .divider{
+            margin: 15px auto 40px auto;
+        }
+        &__subtitle, &__text{
+            text-align: center;
+        }
+        &__social{
+            margin: 20px auto 0;
+            justify-content: space-between;
+        }
+        &__photo{
+            display: none;
+        }
+        &__form{
+            grid-template-columns: repeat(2, 250px);
+        }
+        &__policy{
+            text-align: left;
+            [type="checkbox"]{
+                margin-right: 5px;
+            }
         }
     }
 }
@@ -155,6 +225,32 @@
             grid-template-columns: repeat(2, 257px);
         }
     }
+    .portfolio{
+        padding-top: 40px;
+        &__wrapper{
+            margin-top: 40px;
+            grid-template-columns: repeat(2, 280px);
+        }
+    }
+    .price{
+        padding-top: 40px;
+        &__wrapper{
+            margin-top: 40px;
+        }
+    }
+    .contacts{
+        padding: 40px 0 40px;
+        &__wrapper{
+            padding: 0;
+            grid-template-columns: 500px;
+        }
+        &__form{
+            grid-template-columns: repeat(2, 240px);
+        }
+        &__policy {
+            text-align: center;
+        }
+    }
 }
 
 @media (max-width:576px){
@@ -203,13 +299,11 @@
         }
     }
     .resume{
-        padding-top: 40px;
         &__wrapper{
             grid-template: repeat(2, minmax(428px, auto))/300px;
         }
     }
     .skills{
-        padding-top: 40px;
         &__wrapper{
             margin-top: 40px;
             grid-template-columns: repeat(1, 270px);
@@ -218,6 +312,48 @@
     .development{
         &__wrapper{
             grid-template-columns: 300px;
+        }
+    }
+    .portfolio{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 280px);
+        }
+    }
+    .price{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 300px);
+        }
+    }
+    .contacts{
+        &__wrapper, &__form{
+            grid-template-columns: 300px;
+        }
+        &__form{
+            grid-template-rows: 45px 45px 140px;
+        }
+        &__textarea, &__triggers{
+            grid-column: unset;
+        }
+        &__triggers{
+            grid-template-columns: auto;
+        }
+        &__policy{
+            margin-bottom: 20px;
+            width: 180px;
+            order: -1;
+            justify-self: center;
+            display: flex;
+            align-items: center;
+            [type=checkbox] {
+                margin-right: 10px;
+            }
+            span{
+                text-align: left;
+            }
+        }
+        &__btn{
+            display: block;
+            margin: 0 auto;
         }
     }
 }
