@@ -43,7 +43,7 @@
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body id="up">
     <aside class="sidepanel">
         <a href="#" class="sidepanel__link">
             <svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,12 +76,12 @@
 
             <nav>
                 <ui class="menu__list">
-                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ui>
             </nav>
             <div class="menu__social">
@@ -117,13 +117,13 @@
             <h2 class="title title_fz16 title_white promo__subtitle">Меня зовут Тимур Асанов</h2>
             <h1 class="title title_fz48 promo__title title_white">Я web-разработчик из города Ташкент</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link">Про меня</a>
+                <a href="#portfolio" class="promo__link promo__btn">Портфолио</a>
+                <a href="#about" class="promo__link promo__btn">Про меня</a>
             </div>
         </div>
     </section>
 
-    <section class="about-me">
+    <section id="about" class="about-me">
         <div class="container">
             <div class="about-me__wrapper">
                 <div class="about-me__photo">
@@ -184,7 +184,7 @@
         </div>
     </section>
 
-    <section class="resume">
+    <section id="resume" class="resume">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Опыт</h2>
             <div class="title title_fz36 title__section-subtitle">Чем я буду полезен</div>
@@ -261,7 +261,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Навыки</h2>
             <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
@@ -415,7 +415,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Портфолио</h2>
             <div class="title title_fz36 title__section-subtitle">Мои работы</div>
@@ -425,11 +425,11 @@
                 <a href="/Uber" class="portfolio__item">
                     <img src="img/works/uber.jpg" alt="uber">
                 </a>
-                <a href="http://y97762hk.beget.tech/" class="portfolio__item">
+                <a href="/RunSmart/" class="portfolio__item">
                     <img src="img/works/pulse.jpg" alt="pulse">
                 </a>
-                <a href="#" class="portfolio__item">
-                    <img src="img/works/bread.jpg" alt="test">
+                <a href="/Interno" class="portfolio__item">
+                    <img src="img/works/interno.jpg" alt="test">
                 </a>
                 <a href="/Netflix" class="portfolio__item vertical">
                     <img src="img/works/Mulan.jpg" alt="Mulan">
@@ -437,14 +437,14 @@
                 <a href="#" class="portfolio__item">
                     <img src="img/works/ipad.jpg" alt="test">
                 </a>
-                <a href="#" class="portfolio__item horizontal">
-                    <img src="img/works/mac.jpg" alt="test">
+                <a href="/Glopt" class="portfolio__item horizontal">
+                    <img src="img/works/glopt.jpg" alt="test">
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="price">
+    <section id="price" class="price">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
             <div class="divider"></div>
@@ -473,7 +473,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -524,6 +524,10 @@
             </div>
         </div>
     </section>
+
+    <a href="#up" class="pageup">
+        <img src="icons/up-page.svg" alt="pageup">
+    </a>
 
     <script src="js/script.js"></script>
 </body>
