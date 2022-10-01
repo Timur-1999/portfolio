@@ -48,7 +48,7 @@ infoPercent.forEach((item, i) =>{
     function backToTop() {
         if (window.pageYOffset > 0) {
         window.scrollBy({
-            top: offsetPosition,
+            top: 0,
             behavior: 'smooth'
         });
         setTimeout(backToTop, 0);
